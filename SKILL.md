@@ -34,6 +34,7 @@ description: >-
 
 ## 절차
 
+0. 폰트: 처음 한 번 `install_fonts.sh` 실행(조선굴림체 자동 설치, 부크크고딕은 https://bookk.co.kr/font 에서 받은 뒤 재실행).
 1. 소스 복사: 작업폴더 `reels/<주제>/` 에 main.mp4, broll_*.mp4 (임시폴더 `/var/folders/...` 녹화는 사라지므로 즉시 복사).
 2. 전사: `template/transcribe.py` (faster-whisper medium, word_timestamps, initial_prompt에 고유명사). → words.json
 3. 컷 설계: words.json + silencedetect로 `KEEP` 구간(원본 시각) 작성 — 반복 테이크 제외, 0.2초 쉼 분할. `SUBS`(원본 시각, 교정 표기)와 B롤 구간 지정.
