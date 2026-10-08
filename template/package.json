@@ -1,0 +1,2 @@
+{ "name": "rc-reel", "private": true, "type": "module",
+  "scripts": { "render": "remotion render src/index.ts Reel out/rc_reel.mp4" } }
